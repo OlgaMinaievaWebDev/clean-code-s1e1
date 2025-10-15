@@ -18,19 +18,23 @@
     </a>
   </header>
   <main class="main">
+
     <section id="add-task-section">
-     <h3 class="section_heading">Add Item</h3>
-     <div class="task__wrapper" >
-       <label for="new-task"></label>
+      <h3 class="section_heading">Add Item</h3>
+      <div class="task__wrapper" >
+        <label for="new-task"></label>
         <input
-         id="new-task"
-          class="task"
+          id="new-task"
+          class="task__input"
           aria-label="new__item"
-           type="text">
+          type="text"
+          name="task_text"
+        >
         <button>Add</button>
       </div>
-      <h3 class="section_heading">Todo</h3>
-    </section>
+     </section>
+
+     <h3 class="section_heading">Todo</h3>
   <ul id="incompleteTasks">
     <li>
        <input type="checkbox">
