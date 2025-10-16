@@ -105,28 +105,26 @@ input[type="text"]:focus {
   width: 318px;
 }
 
-/* Task list */
+/* Task items */
 li {
-  overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-li > * {
-  vertical-align: middle;
-}
 
-li > input[type="checkbox"] {
+li input[type="checkbox"] {
   margin: 0 10px;
 }
-li > label {
+li label {
   padding-left: 10px;
   font-size: 18px;
   width: 226px;
 }
-li > input[type="text"] {
+
+
+li input[type="text"] {
   width: 226px;
 }
 
@@ -138,18 +136,18 @@ li > input[type="text"] {
 }
 
 /* Edit Task */
-ul li input[type=text] {
+li input[type=text] {
   display: none;
 }
 
 
-ul li.editMode input[type=text] {
-    display: inline-block;
-    width: 224px;
+li.editMode input[type=text] {
+  display: inline-block;
+  width: 224px;
 }
 
-ul li.editMode label {
-    display: none;
+li.editMode label {
+  display: none;
 }
 
 
