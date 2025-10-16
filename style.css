@@ -12,18 +12,18 @@ body {
 .header img {
   width: 100%;
 }
-.header .header__link {
+.header__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.header { text-align: center;
-}
+  .header { 
+    text-align: center;
+  }
 }
 .main {
-  display: block;
   width: 500px;
-  margin: 0 auto 0;
+  margin: 0 auto;
 }
 .task__input {
   width: 56%;
@@ -40,21 +40,31 @@ ul {
 li, h3 {
   list-style:none;
 }
-input,button{
-  outline:none;
-}
+
+
+/* Buttons */
 button {
   background: none;
-  border: 0px;
+  border: none;
   color: #888;
   font-size: 15px;
   width: 60px;
-  font-family: Lato, sans-serif;
   cursor: pointer;
 }
 button:hover {
   color: #3a3A3a;
 }
+
+button.delete img {
+  height: 2em;
+  transform: rotateZ(45deg);
+  transition: transform 200ms ease-in;
+}
+button.delete img:hover {
+  transform: rotateZ(0);
+}
+
+
 /* Heading */
 h3,
 .section_heading {
@@ -116,14 +126,7 @@ li > label {
 li >    input[type="text"] {
   width: 226px;
 }
-button.delete img {
-  height: 2em;
-  transform: rotateZ(45deg);
-  transition: transform 200ms ease-in;
-}
-button.delete img:hover {
-  transform: rotateZ(0);
-}
+
 
 /* Completed */
 ul#completed-tasks label {
@@ -136,15 +139,15 @@ ul li input[type=text] {
   display:none;
 }
 
-.task__edit input[type=text] {
-  display:inline-block;
-  width:224px;
+
+ul li.editMode input[type=text] {
+    display:inline-block;
+    width:224px
 }
 
-.task__edit label {
-  display:none;
+ul li.editMode label {
+    display:none;
 }
-
 
 
 .visually-hidden {
