@@ -33,11 +33,7 @@ body {
   font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
-  .header { 
-    text-align: center;
-  }
-}
+
 
 .task__input {
   width: 56%;
@@ -163,4 +159,11 @@ ul li.editMode label {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+
+@media screen and (max-width:768px) {
+ .header { 
+    text-align: center;
+  }
 }
