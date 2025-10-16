@@ -50,7 +50,6 @@ body {
 
 .task__input {
   width: 56%;
-  display: inline-block;
   flex-grow: 1;
 }
 
@@ -58,8 +57,6 @@ body {
 ul {
   margin: 0;
   padding: 0;
-}
-li {
   list-style: none;
 }
 
@@ -104,7 +101,6 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-
 #new-task {
   width: 318px;
 }
@@ -130,7 +126,7 @@ li > label {
   font-size: 18px;
   width: 226px;
 }
-li >    input[type="text"] {
+li > input[type="text"] {
   width: 226px;
 }
 
