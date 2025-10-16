@@ -7,7 +7,6 @@ body {
 .header {
   width: 500px;
   margin: 0 auto;
-  display: block;
   text-align: right;
 }
 .header img {
@@ -18,7 +17,7 @@ body {
 }
 
 @media (max-width:768px) {
-.aaa { text-align: center;
+.header { text-align: center;
 }
 }
 .main {
